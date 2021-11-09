@@ -1,9 +1,10 @@
 import './index.scss';
+import Home from './Home.js';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      Content to be inserted
+     <Home />
     </div>
   );
 }
