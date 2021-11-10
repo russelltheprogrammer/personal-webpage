@@ -1,29 +1,14 @@
-import { render } from "@testing-library/react";
 import React from "react";
+import Navbar from "./Navbar";
+import WelcomeSection from "./WelcomeSection";
 
 
 const Home = () => {
 
     return (
         <div>
-            <nav id="navbar" className="nav">
-                <ul className="nav-list">
-                    <li>
-                        <a href="#welcome-section">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <section id="welcome-section">
-                <h1>Russell's Personal Web Page</h1>
-                    <p>An aspiring programmer</p>
-            </section>
+            <Navbar />
+            <WelcomeSection />
 
             <section id="projects">
                 <h2>Russell's Projects</h2>
