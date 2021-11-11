@@ -21,7 +21,7 @@ html {
 @media (max-width: 47.5em) {
   html {
     font-size: 57%;
-    scroll-padding-top: 30%;
+    scroll-padding-top: 28%;
   }
 }
 
@@ -47,6 +47,12 @@ body{
   border-bottom: 5px solid black;
 }
 
+@media (max-width: 28.75em) {
+  #container-navbar {
+    font-size: 1.5rem;
+  }
+}
+
 #container-navbar #site-links li a {
   text-decoration: none;
   color: black;
@@ -58,6 +64,16 @@ body{
   display: inline-block;
   font-weight: bold;
 }
+@media (max-width: 61.25em) {
+  #container-navbar #site-links li a {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
 
 #container-navbar #site-links li a:hover {
  background-color: #B22222;
@@ -128,7 +144,7 @@ body{
 @media (max-width: 28.75em){
   #projects{
   width: 100%;
-    height: auto;
+  height: auto;
   }
 }
 #projects h2{
