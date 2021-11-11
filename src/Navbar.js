@@ -24,9 +24,12 @@ const Navbar = () => {
             </button>
 
              <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarTogglerMenu">
-                <ul className="navbar-nav mx-auto">
+                <ul id="site-links" className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#welcome-section">About</a>
+                        <a className="nav-link" href="#about">About</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#skills">Skills</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#projects">Projects</a>
@@ -34,6 +37,17 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#contact">Contact</a>
                     </li>
+                </ul>
+                <ul id="personal-links" className="navbar-nav ms-auto">
+                        <li className="nav-item">
+                        <a className="nav-link" href="https://www.linkedin.com/in/russell-monteith-cpa-0a43975a/" target="_blank" rel="noreferrer noopener"><i className="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li className="nav-item">
+                        <a className="nav-link" href="https://github.com/russelltheprogrammer" target="_blank" rel="noreferrer noopener"><i className="fab fa-github-square"></i></a>
+                        </li>
+                        <li className="nav-item">
+                        <a className="nav-link" href="mailto: russelltheprogrammer@gmail.com" target="_blank" rel="noreferrer noopener"><i className="fas fa-envelope"></i></a>
+                        </li>
                 </ul>
             </div>
             </div>

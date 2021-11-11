@@ -47,7 +47,7 @@ body{
   border-bottom: 5px solid black;
 }
 
-#container-navbar ul li a {
+#container-navbar #site-links li a {
   text-decoration: none;
   color: black;
   padding-top: 2rem;
@@ -59,8 +59,20 @@ body{
   font-weight: bold;
 }
 
-#container-navbar ul li a:hover {
+#container-navbar #site-links li a:hover {
  background-color: #B22222;
+}
+
+#container-navbar #personal-links li a {
+  text-decoration: none;
+  color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 2.5rem;
+  display: inline-block;
+  font-weight: bold;
 }
 
 #welcome-section {
