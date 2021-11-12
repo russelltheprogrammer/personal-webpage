@@ -29,7 +29,7 @@ const handleButtonClick = (index) => {
     }
         tmp[index].isActive = true;
         return setButtonStatus(tmp);
-}
+};
 
 
 
@@ -39,9 +39,10 @@ const handleButtonClick = (index) => {
             <h1>About Russell</h1>
             <div className="dropdown">
                 {buttonStatus.map((el, index) =>
-                <><button key={index} onClick={handleButtonClick(index)} type="button" class="btn btn-primary">
-                        {el.name}
-                    </button><DropDownList key={el.index} props={el.isActive} /></>
+                <button key={index} onClick={handleButtonClick(index)} type="button" class="btn btn-primary">
+                    {el.name}
+                </button>
+                    // <DropDownList key={index} props={el} />
 
                 )}
 
