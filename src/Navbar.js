@@ -4,7 +4,7 @@ import NavbarMainLinks from "./NavbarMainLinks";
 const Navbar = () => {
 
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1023);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770);
 
     useEffect(() => {
         window.addEventListener("resize", updateMedia);
