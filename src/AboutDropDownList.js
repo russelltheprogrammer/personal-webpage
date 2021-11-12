@@ -1,6 +1,6 @@
-const DropDownList = (props) => {
+const AboutDropDownList = ({props}) => {
 
-    if(props.wordsDescribe && props.isActive) {
+    if(props.description === "Words To Describe Russell" && props.isActive) {
         return (
             <div className="drop-down-word-list">
                 <div id="words-describe">
@@ -16,22 +16,21 @@ const DropDownList = (props) => {
             </div>
         )
     }
-
-    else if(props.priorWork && props.isActive) {
+    else if(props.description === "Prior Work Experience" && props.isActive) {
         return (
             <div className="drop-down-word-list">
                 <p>Millionaire</p>
             </div>
         )
     }
-    else if(props.education && props.isActive) {
+    else if(props.description === "Education" && props.isActive) {
         return (
             <div className="drop-down-word-list">
                 <p>University</p>
             </div>
         )
     }
-    else if(props.otherInterests && props.isActive) {
+    else if(props.description === "Other Interests" && props.isActive) {
         return (
             <div className="drop-down-word-list">
                 <p>Fun</p>
@@ -45,4 +44,4 @@ const DropDownList = (props) => {
     }
 }
 
-export default DropDownList;
+export default AboutDropDownList;
