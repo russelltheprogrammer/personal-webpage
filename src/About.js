@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutDropDownList from "./AboutDropDownList";
 
 const About = () => {
@@ -8,10 +8,10 @@ const About = () => {
 // const [buttonThreeStatus, setbuttonThreeStatus] = useState(false);
 // const [buttonFourStatus, setbuttonFourStatus] = useState(false);
 const [buttonStatus, setButtonStatus] = useState([
-            { id: 1, description: "Words To Describe Russell", isActive: false },
-            { id: 2, description: "Prior Work Experience", isActive: false },
-            { id: 3, description: "Education", isActive: false },
-            { id: 4, description: "Other Interests", isActive: false }
+            { id: 0, description: "Words To Describe Russell", isActive: false },
+            { id: 1, description: "Prior Work Experience", isActive: false },
+            { id: 2, description: "Education", isActive: false },
+            { id: 3, description: "Other Interests", isActive: false }
         ]
     );
 
@@ -20,32 +20,33 @@ const [buttonStatus, setButtonStatus] = useState([
 // const handleClickButtonThree = () => !buttonThreeStatus ? setbuttonThreeStatus(true) : setbuttonThreeStatus(false);
 // const handleClickButtonFour = () => !buttonFourStatus ? setbuttonFourStatus(true) : setbuttonFourStatus(false);
 
-const handleButtonClick = (index) => {
+// useEffect(() => {
+// }, []);
+
+
+const handleButtonClick = (id) => {
     let tmp = buttonStatus;
-    if(tmp[index].isActive){
-        tmp[index].isActive = false;
+    if(tmp[id].isActive){
+        tmp[id].isActive = false;
         return setButtonStatus(tmp);
     }
-        tmp[index].isActive = true;
+        tmp[id].isActive = true;
         return setButtonStatus(tmp);
 };
-
-// spread operator instead of tmp?
-
-// 2 Children have the same key, how can we fix this?
 
 
     return ( 
         <div id="about">
             <h1>About Russell</h1>
             <div className="dropdown">
-                {buttonStatus.map((el) => {
+                {buttonStatus.map((el, index) => {
                     return (
-                <React.Fragment><button key={el.id} onClick={() => handleButtonClick(el.id)} type="button" className="btn btn-primary">
-                            {el.description}
-                        </button>
-                    <AboutDropDownList key={el.id} props={el} />
-                    </React.Fragment>
+                        <span key={index}>
+                            <button onClick={() => handleButtonClick(el.id)} type="button" className="btn btn-primary">
+                                {el.description}
+                            </button>
+                            <AboutDropDownList props={el} />
+                        </span>
                     )}
                 )}
              
