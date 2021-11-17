@@ -23,6 +23,8 @@ const [buttonStatus, setButtonStatus] = useState([
 // useEffect(() => {
 // }, []);
 
+// when button is clicked AboutDropDownList will not re-render. How do we fix this?
+
 
 const handleButtonClick = (id) => {
     let tmp = buttonStatus;

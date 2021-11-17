@@ -1,6 +1,7 @@
 const AboutDropDownList = ({props}) => {
 
-    if(props.description === "Words To Describe Russell" && props.isActive) {
+
+    if(props.id === "Words To Describe Russell" && props.isActive) {
         return (
             <div className="drop-down-word-list">
                 <div id="words-describe">
@@ -39,7 +40,8 @@ const AboutDropDownList = ({props}) => {
     }
     else {
         return(
-            <div></div>
+            <div>
+            </div>
             
         )
     }
