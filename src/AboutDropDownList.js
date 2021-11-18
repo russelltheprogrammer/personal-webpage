@@ -1,19 +1,18 @@
 const AboutDropDownList = ({props}) => {
 
-
-    if(props.id === "Words To Describe Russell" && props.isActive) {
+    if(props.description === "Words To Describe Russell" && props.isActive) {
         return (
             <div className="drop-down-word-list">
-                <div id="words-describe">
-                    <p>Problem Solver</p>
-                    <p>Detail-Oriented</p>
-                    <p>Reliable</p>
-                    <p>Professional</p>
-                    <p>Adaptable and Versatile</p>
-                    <p>Leader and Listener</p>
-                    <p>Intellectually Curious</p>
-                    <p>Organized and Time Management Extraordinaire</p>
-                </div>
+                <ul id="about-words-describe">
+                    <li>Problem Solver</li>
+                    <li>Detail-Oriented</li>
+                    <li>Reliable</li>
+                    <li>Professional</li>
+                    <li>Adaptable and Versatile</li>
+                    <li>Leader and Listener</li>
+                    <li>Intellectually Curious</li>
+                    <li>Organized and Time Management Extraordinaire</li>
+                </ul>
             </div>
         )
     }
