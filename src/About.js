@@ -7,7 +7,7 @@ const [buttonStatus, setButtonStatus] = useState([
             { id: 0, description: "Words To Describe Russell", isActive: false },
             { id: 1, description: "Prior Work Experience", isActive: false },
             { id: 2, description: "Education", isActive: false },
-            { id: 3, description: "Other Interests", isActive: false }
+            { id: 3, description: "Hobbies", isActive: false }
         ]
     );
 
@@ -23,7 +23,7 @@ const handleButtonClick = (id) => {
 
     return ( 
         <div id="about">
-            <h1>About Russell</h1>
+            <h1 className="about-heading">~About Russell~</h1>
             <div className="about-drop-down">
                 {buttonStatus.map((el, index) => {
                     return (
