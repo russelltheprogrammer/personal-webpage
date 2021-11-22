@@ -139,8 +139,8 @@ body{
   padding-bottom: 2rem;
 }
 
-.about-heading{
-font-size: 3rem;
+#about h1{
+  font-size: 3rem;
 }
 
 .about-button{
@@ -166,10 +166,9 @@ font-size: 3rem;
   display: inline-block;
   text-align: left;
   align-items: center;
-  margin-left: 15%;
+  margin-left: 10%;
   font-weight: bold;
 }
-
 
 .about-drop-down-word-blurb{
   width: 50%;
@@ -179,7 +178,36 @@ font-size: 3rem;
   font-weight: bold;
 }
 
-#projects{
+#skills {
+  padding-top: 4rem;
+  width: 100%;
+  text-align: center;
+  background-color: #FFFCF9;
+  padding-bottom: 4rem;
+}
+
+#skills h1 {
+  font-size: 4rem;
+}
+
+#skills-button {
+  border-style: solid;
+  border-width: .5rem;
+  background: #FF6978;
+  border-color: #340068;
+}
+
+#skills-button:hover {
+  background: #B1EDE8;
+}
+
+// Skills Pointer Icon
+.far {
+  font-size: 5rem;
+  color: black;
+}
+
+#projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,12 +215,14 @@ font-size: 3rem;
   background-color: #3CB371;
   height: 55rem;
 }
+
 @media (max-width: 28.75em){
   #projects{
   width: 100%;
   height: auto;
   }
 }
+
 #projects h2{
   margin-top: 2.5rem;
   font-size: 3rem;
@@ -200,7 +230,6 @@ font-size: 3rem;
   padding: .5rem 2rem .5rem 2rem;
   text-decoration: underline;
   background-color: #9ACD32;
-  
 }
 
 #project-grid{
@@ -208,6 +237,7 @@ font-size: 3rem;
   grid-gap: 15rem;
   grid-row-columns: repeat(auto-fit, minmax(200rem, 1fr));
 }
+
 @media (max-width: 28.75em){
   #project-grid{
     display: flex;
@@ -216,7 +246,6 @@ font-size: 3rem;
     grid-gap: 0;
   }
 }
-
 
 .project-tile{
   grid-row-start: 1;
@@ -309,4 +338,9 @@ margin-top: 2.5rem;
   color: red;
   padding-top: 2.5rem;
 }
+
+// #about section color scheme https://coolors.co/cff27e-f2dd6e-e5b25d-b87d4b-523a34
+
+// #skills section pre click color scheme https://coolors.co/340068-ff6978-fffcf9-b1ede8-6d435a
+
   
