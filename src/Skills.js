@@ -2,24 +2,37 @@ import React, { useState } from "react";
 
 const Skills = () => {
 
-const [skillsInitialBackground, setSkillsInitialBackground] = useState(true);
+const [initialSetting, setInitialSetting] = useState(true);
 
-     if(skillsInitialBackground){
-     return ( 
+const handleButtonClick = () => {
 
+return setTimeout(() => {
+     setInitialSetting(false)}, 3000);
+}
+
+
+     if(initialSetting){
+      return ( 
           <div id="skills">
-               <button id="skills-button">
+               <button id="skills-button" onClick={handleButtonClick}>
                <h1 className="skills-heading">SKILLS</h1>
                </button>
                <br/>
                <br/>
-               <i class="far fa-hand-point-up"></i>
-               
-               
-               
+               <i className="far fa-hand-point-up"></i>
           </div>
           );
     }
+    else if(!initialSetting){
+     return(
+          <div id="skills">
+              Skills
+          </div>
+     )
+    }
+
+
+
 }
  
 export default Skills;
