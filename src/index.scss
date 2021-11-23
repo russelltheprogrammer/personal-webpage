@@ -178,7 +178,7 @@ body{
   font-weight: bold;
 }
 
-#skills {
+#skills-before {
   padding-top: 4rem;
   width: 100%;
   text-align: center;
@@ -186,8 +186,13 @@ body{
   padding-bottom: 4rem;
 }
 
-#skills h1 {
+#skills-before h1 {
   font-size: 4rem;
+}
+
+#skills-after {
+  @extend #skills-before;
+  transition: all 3s ease-in-out .1s;
 }
 
 #skills-button {
