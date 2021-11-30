@@ -13,20 +13,24 @@ const handleButtonClick = () => {
 
      if(initialSetting){
       return ( 
-          <div id="skills-before">
-               <button id="skills-button" onClick={handleButtonClick}>
-               <h1 className="skills-heading">SKILLS</h1>
-               </button>
-               <br/>
-               <br/>
-               <i className="far fa-hand-point-up"></i>
+           <div id="skills">
+               <div id="skills-before">
+                    <button id="skills-button" onClick={handleButtonClick}>
+                    <h1 className="skills-heading">SKILLS</h1>
+                    </button>
+                    <br/>
+                    <br/>
+                    <i className="far fa-hand-point-up"></i>
+               </div>
           </div>
           );
     }
     else if(!initialSetting){
      return(
-          <div id="skills-after" style={{ backgroundColor:transitionColors }}>
-              Skills
+          <div id="skills">
+               <div id="skills-after" style={{ backgroundColor:transitionColors }}>
+               Skills
+               </div>
           </div>
      )
     }
