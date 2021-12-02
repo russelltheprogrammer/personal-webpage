@@ -33,11 +33,11 @@ const AboutDropDownList = ({props}) => {
         return (
             <div>
                 <ul className="about-drop-down-word-list">
-                    <li>Graduated from Binghamton University with a Bachelor of Science in Accounting</li>
-                    <li>Graduated from Binghamton University with a Masters in Accounting</li>
                     <li>freeCodeCamp Responsive Web Design Certification</li>
                     <li>freeCodeCamp Javascript Algorithms and Data Structures Certification</li>
                     <li>freeCodeCamp Front End Libraries Certification</li>
+                    <li>Graduated from Binghamton University with a Bachelor of Science in Accounting</li>
+                    <li>Graduated from Binghamton University with a Masters in Accounting</li>
                 </ul>
             </div>
         )
@@ -47,7 +47,7 @@ const AboutDropDownList = ({props}) => {
             <div className="about-drop-down-word-blurb">
                 <p>Some people might find it hard to believe but Russell does not program 24/7, 365 days a year. Although he does enjoy it, other times
                     you can find Russell partaking in other activities such as watching football, watching Formula1 car racing, playing video games,
-                    playing board games, exercising, listening to synthwave music, or simply relaxing in space while.
+                    playing board games, exercising, listening to synthwave music, or simply relaxing in space.
                 </p>
             </div>
         )

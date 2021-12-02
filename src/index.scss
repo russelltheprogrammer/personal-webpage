@@ -193,8 +193,10 @@ body{
 #skills-after {
   @extend #skills-before;
   transition-property: all;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-timing-function: ease-in-out;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 #skills-button {

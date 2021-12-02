@@ -5,22 +5,23 @@ const Skills = () => {
 const [initialSetting, setInitialSetting] = useState(true);
 const [transitionColors, setTransitionColors] = useState(null);
 
-const changeColors = (color) => {
+const changeColors = (color, transitionTime) => {
      return new Promise((resolve, reject) => {
           let wait = setTimeout(() => {
                clearTimeout(wait);
                resolve(setTransitionColors(color));
-          }, 1500);
+          }, transitionTime);
           
      });
 };
 
 const handleButtonClick = () => {
      setInitialSetting(false);
-     return changeColors("pink")
-     .then(() => changeColors("orange"))
-     .then(() => changeColors("aqua"))
-     .then(() => changeColors("lightgrey"))
+     return changeColors("#04E762", 250)
+     .then(() => changeColors("#DC0073", 1500))
+     .then(() => changeColors("#89FC00", 1500))
+     .then(() => changeColors("#008BF8", 1500))
+     .then(() => changeColors("#F5B700", 1500))
      .catch(err => {console.log("promise rejected", err)});
 };
 
@@ -42,7 +43,7 @@ const handleButtonClick = () => {
      return(
           <div id="skills">
                <div id="skills-after" style={{ backgroundColor:transitionColors }}>
-               HTML, CSS, JS, REACTJS, SASS, REDUX, BOOTSTRAP, GIT, GITHUB, VSC, CMD, 
+               HTML, CSS, JS, REACTJS, SASS, REDUX, BOOTSTRAP, GIT, GITHUB, VSC, CMD
                </div>
           </div>
      )
