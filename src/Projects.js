@@ -1,19 +1,22 @@
 const Projects = () => {
-    return ( 
 
-        <div id="projects-container">
+const flexItems = [ "Flex Item 1", "Flex Item 2", "Flex Item 3", "Flex Item 4" ];
+
+    return ( 
+        <div id="projects">
             <div className="projects-header-container">
                 <h2 className="projects-header">Russell's Projects</h2>
             </div>
-                <div id="projects-bootstrap-container" className="container-fluid">
-                    <div className="row justify-content-md-center">
-                    Add Bootstrap with Project Links
+                <div className="container-fluid" style={{ width: '80%' }}>
+                    <div className="d-flex flex-row justify-content-center align-items-center flex-wrap">
+                        
+                    {flexItems.map((item, index) => (
+                        <div className="col-4 text-center">{item}</div>  
+                    ))}
+
                     </div>
                 </div>
-            
-        
         </div>
-    
      );
 }
  
