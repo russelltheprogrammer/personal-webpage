@@ -43,7 +43,7 @@ const handleButtonClick = () => {
      return(
           <div id="skills">
                <div id="skills-after" style={{ backgroundColor:transitionColors }}>
-               HTML, CSS, JS, REACTJS, SASS, REDUX, BOOTSTRAP, GIT, GITHUB, VSC, CMD
+               HTML, CSS, JS, REACTJS, SASS, REDUX, BOOTSTRAP, GIT/GITHUB, VSC, CLI
                </div>
           </div>
      )
