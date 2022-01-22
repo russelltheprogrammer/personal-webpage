@@ -216,14 +216,14 @@ body{
   color: black;
 }
 
-#projects-container {
+#projects{
   width: 100%;
   background-color: #3CB371;
   height: 55rem;
 }
 
 .projects-header{
-  font-size: 3rem;
+  font-size: 300%;
   padding-top: 5rem;
   border: .5rem outset black;
   padding: 1.5rem 1rem 1.5rem 1rem;
@@ -233,18 +233,31 @@ body{
   box-shadow: 15px 10px 20px black;
 }
 
+@media (max-width: 39em) {
+  .projects-header {
+    font-size: 250%;
+  }
+}
+
 .projects-header-container{
   padding-top: 2rem;
-  width: 30%;
+  width: 24%;
   text-align: center;
-  margin: auto 0;
-  margin-left: 35%;
+  margin-bottom: 4%;
+  margin-left: 38%;
 }
 
-#projects-bootstrap-container{
+@media (max-width: 39em) {
+  .projects-header-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+.projects-content-container{
   margin-top: 5rem;
+  width: 80%;
 }
-
 
 #contact{
   display: flex;
