@@ -11,7 +11,7 @@ const flexItems = [ "Flex Item 1", "Flex Item 2", "Flex Item 3", "Flex Item 4" ]
                     <div className="d-flex flex-row justify-content-center align-items-center flex-wrap">
                         
                     {flexItems.map((item, index) => (
-                        <div className="col-4 text-center">{item}</div>  
+                        <div key={index} className="col-4 text-center">{item}</div>  
                     ))}
 
                     </div>
@@ -23,7 +23,7 @@ const flexItems = [ "Flex Item 1", "Flex Item 2", "Flex Item 3", "Flex Item 4" ]
 export default Projects;
 
 
-{/* <div id="project-grid">
+/* <div id="project-grid">
 //Picture of Dorian Grey
 <a  href="https://codepen.io/rundownx2020/pen/MWyaQBa"
 target="_blank"
@@ -52,4 +52,4 @@ className="project-tile">
 <p>Classic N64 Games -Project Landing Page
 </p>
 </a>
-</div> */}
+</div> */
