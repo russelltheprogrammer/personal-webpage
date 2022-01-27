@@ -1,8 +1,16 @@
+import React, { useEffect } from "react";
 import NavbarPersonalLinks from "./NavbarPersonalLinks";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const NavbarMainLinks = (props) => {
+
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    }, []);
+
     return ( 
-        <nav id="container-navbar" className="navbar fixed-top navbar-expand-md">
+        <nav id="container-navbar" className="navbar fixed-top navbar-expand-md" data-aos="slide-left">
             <div className="container-fluid">
             <button 
             className="navbar-toggler" 
