@@ -24,7 +24,7 @@ const AboutDropDownList = ({props}) => {
                     is a Certified Public Accountant. Check out his website at&nbsp;
                     <a href="https://monteithtaxcpa.com/"
                     target="_blank"
-                    rel="noreferrer noopener">monteithtaxcpa.com</a>.
+                    rel="noreferrer noopener">www.monteithtaxcpa.com</a>.
                 </p>
             </div>
         )
