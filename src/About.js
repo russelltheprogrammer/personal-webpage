@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutDropDownList from "./AboutDropDownList";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const About = () => {
 
@@ -11,16 +13,23 @@ const [buttonStatus, setButtonStatus] = useState([
         ]
     );
 
+const [popOutStatus, setPopOutStatus] = useState(false);
+
+useEffect(() => {
+    Aos.init({duration: 2500});
+}, []);
+
 const handleButtonClick = (id) => {
     let tmp = buttonStatus.slice();
     if(tmp[id].isActive){
         tmp[id].isActive = false;
-        return setButtonStatus(tmp);
+        return setButtonStatus(tmp) + setPopOutStatus(false);
     }
         tmp[id].isActive = true;
-        return setButtonStatus(tmp);
+        return setButtonStatus(tmp) + setPopOutStatus(true);
 };
 
+if(!popOutStatus){
     return ( 
         <div id="about">
             <h1>~About Russell~</h1>
@@ -38,6 +47,27 @@ const handleButtonClick = (id) => {
             </div>
         </div>
      );
+}
+else{
+    return (
+        <div id="about-pop-out">
+            <div id="about-pop-out-content" data-aos="fade-in">
+                {buttonStatus.map((el, index) => {
+                    return (
+                        <span key={index}>
+                            <div className="about-exit-button-container">
+                                {el.isActive ? <button onClick={() => handleButtonClick(el.id)} className="about-exit-button">EXIT</button> : <div></div>}
+                            </div>
+                            <div className="about-content-container">
+                                <AboutDropDownList props={el} />
+                            </div>
+                        </span>
+                    )}
+                )}
+            </div>
+        </div>
+    )
+}
 }
  
 export default About;
