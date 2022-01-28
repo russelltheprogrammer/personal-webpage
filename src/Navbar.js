@@ -7,7 +7,6 @@ const Navbar = () => {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770);
     const [showNavbar, setShowNavbar] = useState(true);
 
-
     useEffect(() => {
         window.addEventListener("resize", updateMedia);
         return () => window.removeEventListener("resize", updateMedia)
