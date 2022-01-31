@@ -56,7 +56,9 @@ else{
                     return (
                         <span key={index}>
                             <div className="about-exit-button-container">
-                                {el.isActive ? <button onClick={() => handleButtonClick(el.id)} className="about-exit-button">EXIT</button> : <div></div>}
+                                {el.isActive ? 
+                                <button onClick={() => handleButtonClick(el.id)} className="about-exit-button"><i className="fas fa-times-circle"></i></button> : 
+                                <div></div>}
                             </div>
                             <div className="about-content-container">
                                 <AboutDropDownList props={el} />

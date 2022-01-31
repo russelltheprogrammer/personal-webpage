@@ -189,8 +189,10 @@ body{
   align-items: center;
   background: rgb(65, 64, 64);
   color: white;
+  font-size: 2.5rem;
   z-index: 3;
   padding: 0 5% 5% 5%;
+  border: .25rem solid white;
 }
 
 .about-exit-button-container{
@@ -198,24 +200,29 @@ body{
   padding-top: 1%;
 }
 
+.about-exit-button{
+  font-size: 3rem;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+}
+
 .about-drop-down-word-list{
   padding-top: .5rem;
-  font-size: 1.5rem;
   display: inline-block;
   text-align: left;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 20%;
   font-weight: bold;
-  padding-top: 15%;
+  padding-top: 5%;
 }
 
 .about-drop-down-word-blurb{
   width: 50%;
   align-items: center;
   margin: 0 auto;
-  font-size: 1.5rem;
   font-weight: bold;
-  padding-top: 15%;
+  padding-top: 2.5%;
 }
 
 #skills-before {

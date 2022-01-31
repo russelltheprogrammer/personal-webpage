@@ -46,7 +46,7 @@ const AboutDropDownList = ({props}) => {
         return (
             <div className="about-drop-down-word-blurb">
                 <p>Some people might find it hard to believe but Russell does not program 24/7, 365 days a year. Although he does enjoy it, other times
-                    you can find Russell partaking in other activities such as watching football, watching Formula1 car racing, playing video games/board games, 
+                    you can find Russell partaking in other activities such as watching football, watching Formula1, playing video games/board games, 
                     exercising, listening to synthwave music, or simply relaxing in space.
                 </p>
             </div>
