@@ -140,7 +140,7 @@ body{
   }
 }
 
-#about {
+#about-container {
   padding-top: 1rem;
   width: 100%;
   text-align: center;
@@ -229,7 +229,7 @@ body{
   padding-top: 4rem;
   width: 100%;
   text-align: center;
-  background-color: #FFFCF9;
+  background-image: linear-gradient(45deg, #8B008B 25%, #7B68EE 65%, #1E90FF 100%);
   padding-bottom: 4rem;
 }
 

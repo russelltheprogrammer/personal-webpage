@@ -32,6 +32,7 @@ const handleButtonClick = (id) => {
 if(!popOutStatus){
     return ( 
         <div id="about">
+            <div id="about-container">
             <h1>~About Russell~</h1>
             <div className="about-drop-down">
                 {buttonStatus.map((el, index) => {
@@ -45,11 +46,13 @@ if(!popOutStatus){
                     )}
                 )}
             </div>
+            </div>
         </div>
      );
 }
 else{
     return (
+        <div id="about">
         <div id="about-pop-out">
             <div id="about-pop-out-content" data-aos="fade-in">
                 {buttonStatus.map((el, index) => {
@@ -67,6 +70,7 @@ else{
                     )}
                 )}
             </div>
+        </div>
         </div>
     )
 }
