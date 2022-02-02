@@ -46,8 +46,7 @@ body{
 }
 
 #container-navbar{
-  background-color: #DAA520;
-  color: black;
+  background-color: #8A7BAF;
   width: 100%; 
   font-size: 2.25rem;
   top: 0;
@@ -64,7 +63,7 @@ body{
 
 #container-navbar #site-links li a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 7rem;
@@ -83,7 +82,7 @@ body{
 }
 
 #container-navbar #site-links li a:hover {
- background-color: #B22222;
+ background-color: #16063A
 }
 
 #container-navbar #personal-links li a {
@@ -98,17 +97,24 @@ body{
   font-weight: bold;
 }
 
+.nav-link-button{
+  padding-top: 30%;
+  background-color: #8A7BAF;
+  border: 0 none transparent;
+}
+
 #welcome-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(45deg, #8B008B 25%, #7B68EE 65%, #1E90FF 100%);
+  height: 110vh;
+  background-color: #442F74;
+  color: white;
 }
 
 #welcome-section h1{
-  margin-top: 45vh;;
+  margin-top: 25vh;;
   font-size: 4rem;
 }
 
@@ -116,7 +122,7 @@ body{
   #welcome-section h1{
     text-align: center;
     width: 100%;
-    margin-top: 40vh;
+    margin-top: 30vh;
   }
 }
 
@@ -135,8 +141,32 @@ body{
 @media (max-width: 28.75em){
   #welcome-section p{
     text-align: center; 
-    width: 100%;
-    padding-bottom: 25%;
+    width: 90%;
+    padding-bottom: 5%;
+  }
+}
+
+.welcome-headshot{
+  margin-top: 3%;
+  max-width: 25%;
+  height: auto;
+  width: auto;
+  border-style: solid;
+  border-width: .25rem;
+  border-color: black;
+  border-radius: 50%;
+}
+
+@media (min-width: 28.76em) and (max-width: 61.25em){
+  .welcome-headshot{
+    margin-top: 5%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 28.75em){
+  .welcome-headshot{
+    max-width: 50%;
   }
 }
 
@@ -144,7 +174,8 @@ body{
   padding-top: 1rem;
   width: 100%;
   text-align: center;
-  background-color: #DAA520;
+  background-color: #645092;
+  color: white;
   padding-bottom: 10rem;
 }
 
@@ -165,6 +196,12 @@ body{
   border-style: inset;
   border-width: .5rem;
   font-size: 1.75rem;
+}
+
+@media (max-width: 47.5em){
+  .about-button {
+    width: 50%;
+  }
 }
 
 .about-button:hover{
@@ -218,7 +255,7 @@ body{
 }
 
 .about-drop-down-word-blurb{
-  width: 50%;
+  width: 60%;
   align-items: center;
   margin: 0 auto;
   font-weight: bold;
@@ -242,6 +279,7 @@ body{
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
+  background-image: linear-gradient(45deg, #8B008B 25%, #7B68EE 65%, #1E90FF 100%);
   font-size: 3rem;
   font-weight: bold;
 }
@@ -265,17 +303,19 @@ body{
 
 #projects{
   width: 100%;
-  background-color: #3CB371;
+  background-color: #DAA520;
   height: 55rem;
+  
 }
 
 .projects-header{
   font-size: 300%;
   padding-top: 5rem;
-  border: .5rem outset black;
+  color: white;
+  border: .5rem outset #E5B25D;
   padding: 1.5rem 1rem 1.5rem 1rem;
   text-decoration: underline;
-  background-color: #9ACD32;
+  background-color: #523A34;
   text-align: center;
   box-shadow: 15px 10px 20px black;
 }
@@ -357,8 +397,15 @@ body{
   padding-top: 2.5rem;
 }
 
-// #about section color scheme https://coolors.co/cff27e-f2dd6e-e5b25d-b87d4b-523a34
 
-// #skills section pre click color scheme https://coolors.co/340068-ff6978-fffcf9-b1ede8-6d435a
+
+/* As hex codes -- Color scheme*/
+
+// .color-primary-0 { color: #442F74 }	/* Main Primary color */
+// .color-primary-1 { color: #8A7BAF }
+// .color-primary-2 { color: #645092 }
+// .color-primary-3 { color: #2A1657 }
+// .color-primary-4 { color: #16063A }
+// https://paletton.com/#uid=14j0u0kllllaFw0g0qFqFg0w0aF
 
   
