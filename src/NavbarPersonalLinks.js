@@ -1,3 +1,6 @@
+import copyEmailToClipBoard from "./copyEmailToClipBoard";
+
+
 const NavbarPersonalLinks = () => {
     return ( 
     <ul id="personal-links" className="navbar-nav ms-auto">
@@ -8,7 +11,9 @@ const NavbarPersonalLinks = () => {
             <a className="nav-link" href="https://github.com/russelltheprogrammer" target="_blank" rel="noreferrer noopener"><i className="fab fa-github-square"></i></a>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="mailto: russelltheprogrammer@gmail.com" target="_blank" rel="noreferrer noopener"><i className="fas fa-envelope"></i></a>
+            <span className="nav-link">
+                <button className="nav-link-button" onClick={() => copyEmailToClipBoard("russelltheprogrammer@gmail.com")}><i className="fas fa-envelope"></i></button>
+            </span>
             </li>
     </ul>
 
