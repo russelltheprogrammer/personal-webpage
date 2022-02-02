@@ -3,26 +3,10 @@ import React, { useState } from "react";
 const Skills = () => {
 
 const [initialSetting, setInitialSetting] = useState(true);
-const [transitionColors, setTransitionColors] = useState(null);
 
-const changeColors = (color, transitionTime) => {
-     return new Promise((resolve, reject) => {
-          let wait = setTimeout(() => {
-               clearTimeout(wait);
-               resolve(setTransitionColors(color));
-          }, transitionTime);
-          
-     });
-};
 
 const handleButtonClick = () => {
      setInitialSetting(false);
-     return changeColors("#04E762", 250)
-     .then(() => changeColors("#DC0073", 1500))
-     .then(() => changeColors("#89FC00", 1500))
-     .then(() => changeColors("#008BF8", 1500))
-     .then(() => changeColors("#F5B700", 1500))
-     .catch(err => {console.log("promise rejected", err)});
 };
 
      if(initialSetting){
@@ -42,7 +26,7 @@ const handleButtonClick = () => {
     else if(!initialSetting){
      return(
           <div id="skills">
-               <div id="skills-after" style={{ backgroundColor:transitionColors }}>
+               <div id="skills-after">
                HTML, CSS, JS, REACTJS, SASS, REDUX, BOOTSTRAP, GIT/GITHUB, VSC, CLI
                </div>
           </div>
