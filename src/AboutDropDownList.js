@@ -1,28 +1,35 @@
 const AboutDropDownList = ({props}) => {
 
-    if(props.description === "Words To Describe Russell" && props.isActive) {
+    if(props.description === "Who is Russell?" && props.isActive) {
         return (
-            <div>
-                <ul className="about-drop-down-word-list">
-                    <li>Problem Solver</li>
-                    <li>Detail-Oriented</li>
-                    <li>Reliable</li>
-                    <li>Professional</li>
-                    <li>Adaptable and Versatile</li>
-                    <li>Leader and Listener</li>
-                    <li>Intellectually Curious</li>
-                    <li>Organized and Time Management Extraordinaire</li>
-                </ul>
+            <div className="about-drop-down-word-blurb">
+                    <p>I live in New York City and I have been doing web development since July 2020 when I created my first Javascript variable.
+                    This was a big moment for someone trying to find their calling in life. Ever since then, I have been hooked on programming.
+                    I am now looking to join a team that shares my similar excitement for web development. It is a profession that allows for forever learning
+                    and daily problem solving challenges which is what I flock to.
+                    </p>
             </div>
         )
     }
-    else if(props.description === "Prior Work Experience" && props.isActive) {
+    else if(props.description === "What does Russell do right now?" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
-                <p>He was a multi-millionaire but lost everything in a poor investment in an exotic lizard zoo... Now Russell is
-                    trying his hand at web development. He also has over 8 years of experience working as a tax accountant and
-                    is a Certified Public Accountant. Check out his website at&nbsp;
-                    <a href="https://monteithtaxcpa.com/"
+                <p>Currently, I work part time in accounting and spend the rest of my time focusing on my goal of becoming a full time 
+                    web developer. Some of the ways I develop my programming skills are by building personal projects, learning new coding languagues 
+                    and technologies, and practicing my algorithm skills.
+                </p>
+            </div>
+        )
+    }
+    else if(props.description === "What did Russell used to do?" && props.isActive) {
+        return (
+            <div className="about-drop-down-word-blurb">
+                <p> I was a multi-millionaire but lost everything in a poor investment in an exotic lizard zoo...
+                    In reality, I used to be a full time accountant but I always knew I would not work as an accountant forever. I did not discover my
+                    passion for web development until later in life and I am sure glad I did because I am very happy on this new journey.
+                    As an accountant, I have over 8 years of experience working in tax and I am a Certified Public Accountant 
+                    in the State of New York. I still manage a side business to this day. Check out my website at&nbsp;
+                    <a href="http://www.monteithtaxcpa.com/"
                     target="_blank"
                     rel="noreferrer noopener">www.monteithtaxcpa.com</a>.
                 </p>
@@ -42,7 +49,7 @@ const AboutDropDownList = ({props}) => {
             </div>
         )
     }
-    else if(props.description === "Hobbies" && props.isActive) {
+    else if(props.description === "Outside Interests/Hobbies" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
                 <p>Some people might find it hard to believe but Russell does not program 24/7, 365 days a year. Although he does enjoy it, other times

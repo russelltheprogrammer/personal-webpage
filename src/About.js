@@ -6,17 +6,18 @@ import "aos/dist/aos.css"
 const About = () => {
 
 const [buttonStatus, setButtonStatus] = useState([
-            { id: 0, description: "Words To Describe Russell", isActive: false },
-            { id: 1, description: "Prior Work Experience", isActive: false },
-            { id: 2, description: "Education", isActive: false },
-            { id: 3, description: "Hobbies", isActive: false }
+            { id: 0, description: "Who is Russell?", isActive: false },
+            { id: 1, description: "What does Russell do right now?", isActive: false },
+            { id: 2, description: "What did Russell used to do?", isActive: false },
+            { id: 3, description: "Education", isActive: false },
+            { id: 4, description: "Outside Interests/Hobbies", isActive: false }
         ]
     );
 
 const [popOutStatus, setPopOutStatus] = useState(false);
 
 useEffect(() => {
-    Aos.init({duration: 2500});
+    Aos.init({duration: 2000});
 }, []);
 
 const handleButtonClick = (id) => {
