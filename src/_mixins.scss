@@ -1,0 +1,27 @@
+@mixin background-color-scheme($val) {
+    @if $val == lightest {
+      background-color: #8A7BAF;
+    }
+    @else if $val == light {
+      background-color: #645092;
+    }
+    @else if $val == darkest {
+      background-color: #16063A;
+    }
+    @else if $val == dark {
+      background-color: #2A1657;
+    }
+    @else {
+      background-color: #442F74
+    }
+  }
+  
+
+/* As hex codes -- Color scheme*/
+
+// .color-primary-0 { color: #442F74 }	/* Main Primary color */
+// .color-primary-1 { color: #8A7BAF }  / Light
+// .color-primary-2 { color: #645092 }  / Lightest
+// .color-primary-3 { color: #2A1657 }  / Dark
+// .color-primary-4 { color: #16063A }  / Darkest
+// https://paletton.com/#uid=14j0u0kllllaFw0g0qFqFg0w0aF
