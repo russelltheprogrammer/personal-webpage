@@ -1,3 +1,7 @@
+@import "mixins";
+
+// Check out _mixins.scss for color scheme used throughout
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -40,19 +44,13 @@ body{
   z-index: 1;
 }
 
-// Why will this not work???
-.nav-transition{
-  transition: all 2s ease-in;
-}
-
 #container-navbar{
-  background-color: #8A7BAF;
+  @include background-color-scheme(lightest);
   width: 100%; 
   font-size: 2.25rem;
   top: 0;
   left: 0;
   border-bottom: 5px solid black;
-  transition: all 2s ease-out;
 }
 
 @media (max-width: 28.75em) {
@@ -82,10 +80,10 @@ body{
 }
 
 #container-navbar #site-links li a:hover {
- background-color: #16063A
+  @include background-color-scheme(darkest);
 }
 
-#container-navbar #personal-links li a {
+#nav-personal-links li a {
   text-decoration: none;
   color: black;
   padding-top: 2rem;
@@ -99,7 +97,7 @@ body{
 
 .nav-link-button{
   padding-top: 30%;
-  background-color: #8A7BAF;
+  @include background-color-scheme(lightest);
   border: 0 none transparent;
 }
 
@@ -109,7 +107,7 @@ body{
   align-items: center;
   width: 100%;
   height: 110vh;
-  background-color: #442F74;
+  @include background-color-scheme(default);
   color: white;
 }
 
@@ -171,10 +169,10 @@ body{
 }
 
 #about-container {
-  padding-top: 1rem;
+  padding-top: 2rem;
   width: 100%;
   text-align: center;
-  background-color: #645092;
+  @include background-color-scheme(dark);
   color: white;
   padding-bottom: 10rem;
 }
@@ -186,13 +184,13 @@ body{
 }
 
 .about-button{
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 2rem;
   width: 20%;
-  background-color: #523A34;
+  @include background-color-scheme(lightest);
   color: white;
-  border: #E5B25D;
+  border: white;
   border-style: inset;
   border-width: .5rem;
   font-size: 1.75rem;
@@ -205,7 +203,7 @@ body{
 }
 
 .about-button:hover{
-  background-color: #B87D4B;
+  @include background-color-scheme(darkest);
   color: white;
 }
 
@@ -251,59 +249,31 @@ body{
   align-items: center;
   margin-left: 20%;
   font-weight: bold;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .about-drop-down-word-blurb{
-  width: 60%;
+  width: 70%;
   align-items: center;
   margin: 0 auto;
   font-weight: bold;
-  padding-top: 2.5%;
+  padding-top: 2%;
 }
 
-#skills-before {
-  padding-top: 4rem;
+#skills {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(45deg, #8B008B 25%, #7B68EE 65%, #1E90FF 100%);
-  padding-bottom: 4rem;
-}
-
-#skills-before h1 {
-  font-size: 4rem;
-}
-
-#skills-after {
-  @extend #skills-before;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
-  background-image: linear-gradient(45deg, #8B008B 25%, #7B68EE 65%, #1E90FF 100%);
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-#skills-button {
-  border-style: solid;
-  border-width: .5rem;
-  background: #FF6978;
-  border-color: #340068;
-}
-
-#skills-button:hover {
-  background: #B1EDE8;
-}
-
-// Skills Pointer Icon
-.far {
+  @include background-color-scheme(default);
   font-size: 5rem;
-  color: black;
+  font-weight: bold;
+  color: white;
 }
 
 #projects{
   width: 100%;
-  background-color: #DAA520;
+  @include background-color-scheme(default);
   height: 55rem;
   
 }
@@ -351,7 +321,7 @@ body{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #B0C4DE;
+  @include background-color-scheme(light);
   height: 65rem;
 }
 #contact h3{
@@ -389,23 +359,39 @@ body{
 
 #footer {
   bottom: 0;
+  left: 0;
+  margin: auto 0;
   width: 100%;
-  text-align: center;
-  font-size: 2rem;
-  background-color: #A9A9A9;
-  color: red;
-  padding-top: 2.5rem;
+  @include background-color-scheme(lightest);
+  font-size: 2.25rem;
+  padding-top: 2%;
+  padding-bottom: .01%;
+  border-top: 5px solid black;
+}
+
+#footer-personal-links li a {
+  text-decoration: none;
+  color: black;
+  line-height: 2.5rem;
+  display: inline-block;
+  font-weight: bold;
 }
 
 
+#footer-personal-links {
+  list-style-type: none;
+}
 
-/* As hex codes -- Color scheme*/
+#footer-personal-links li {
+  padding: .75%;
+}
 
-// .color-primary-0 { color: #442F74 }	/* Main Primary color */
-// .color-primary-1 { color: #8A7BAF }
-// .color-primary-2 { color: #645092 }
-// .color-primary-3 { color: #2A1657 }
-// .color-primary-4 { color: #16063A }
-// https://paletton.com/#uid=14j0u0kllllaFw0g0qFqFg0w0aF
+.footer-link-button{
+  @extend .nav-link-button;
+  padding-top: 3%;
+}
 
+.footer-link-to-top{
+ color: white;
+}
   
