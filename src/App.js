@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import Footer from './Footer';
 
 
 const App = () => {
@@ -17,15 +18,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
-
-      {/* Footer Information */}
-      <div id="footer">Coded by 
-        <a 
-        target="_blank"
-        rel="noreferrer noopener"
-        href="https://forum.freecodecamp.org/u/rundownx3">
-        Rundownx3</a> (An aspiring programmer) for FCC curriculum.
-      </div>
+      <Footer />
     </div>
   );
 }
