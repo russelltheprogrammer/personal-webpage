@@ -8,7 +8,7 @@ const About = () => {
 const [buttonStatus, setButtonStatus] = useState([
             { id: 0, description: "Who is Russell?", isActive: false },
             { id: 1, description: "What does Russell do right now?", isActive: false },
-            { id: 2, description: "What did Russell used to do?", isActive: false },
+            { id: 2, description: "What Russell used to do?", isActive: false },
             { id: 3, description: "Education", isActive: false },
             { id: 4, description: "Outside Interests/Hobbies", isActive: false }
         ]

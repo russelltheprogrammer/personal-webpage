@@ -5,8 +5,8 @@ const AboutDropDownList = ({props}) => {
             <div className="about-drop-down-word-blurb">
                     <p>I live in New York City and I have been doing web development since July 2020 when I created my first Javascript variable.
                     This was a big moment for someone trying to find their calling in life. Ever since then, I have been hooked on programming.
-                    I am now looking to join a team that shares my similar excitement for web development. It is a profession that allows for forever learning
-                    and daily problem solving challenges which is what I flock to.
+                    I am now looking to join a team that shares my similar excitement for web development. As a profession that allows for forever learning
+                    and daily problem solving, I can't help but flock to it.
                     </p>
             </div>
         )
@@ -21,7 +21,7 @@ const AboutDropDownList = ({props}) => {
             </div>
         )
     }
-    else if(props.description === "What did Russell used to do?" && props.isActive) {
+    else if(props.description === "What Russell used to do?" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
                 <p> I was a multi-millionaire but lost everything in a poor investment in an exotic lizard zoo...
@@ -52,8 +52,8 @@ const AboutDropDownList = ({props}) => {
     else if(props.description === "Outside Interests/Hobbies" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
-                <p>Some people might find it hard to believe but Russell does not program 24/7, 365 days a year. Although he does enjoy it, other times
-                    you can find Russell partaking in other activities such as watching football, watching Formula1, playing video games/board games, 
+                <p>Some people might find it hard to believe but I do not program 24/7, 365 days a year. Of course, I enjoy it but other times
+                    you can find me partaking in other activities such as watching football, watching Formula1, playing video games/board games, 
                     exercising, listening to synthwave music, or simply relaxing in space.
                 </p>
             </div>
