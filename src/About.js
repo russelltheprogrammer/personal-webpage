@@ -53,7 +53,7 @@ if(!popOutStatus){
 }
 else{
     return (
-        <div id="about">
+        <div>
         <div id="about-pop-out">
             <div id="about-pop-out-content" data-aos="fade-in">
                 {buttonStatus.map((el, index) => {
@@ -72,7 +72,24 @@ else{
                 )}
             </div>
         </div>
+        <div id="about">
+        <div id="about-container">
+        <h1>~About Russell~</h1>
+        <div className="about-drop-down">
+            {buttonStatus.map((el, index) => {
+                return (
+                    <span key={index}>
+                        <button onClick={() => handleButtonClick(el.id)} type="button" className="about-button">
+                            {el.description}
+                        </button>
+                        <AboutDropDownList props={"div"} />
+                    </span>
+                )}
+            )}
         </div>
+        </div>
+    </div>
+    </div>
     )
 }
 }

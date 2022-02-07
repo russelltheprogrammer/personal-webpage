@@ -59,6 +59,12 @@ const AboutDropDownList = ({props}) => {
             </div>
         )
     }
+    else if(props === "div") {
+        return (
+            <div>
+            </div>
+        )
+    }
     else {
         return(
             <div>

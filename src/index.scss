@@ -232,7 +232,7 @@ body{
 
 .about-exit-button-container{
   margin-left: 100%;
-  padding-top: 1%;
+  padding-top: .5%;
 }
 
 .about-exit-button{
@@ -364,7 +364,7 @@ body{
   width: 100%;
   @include background-color-scheme(lightest);
   font-size: 2.25rem;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: .01%;
   border-top: 5px solid black;
 }
@@ -388,7 +388,7 @@ body{
 
 .footer-link-button{
   @extend .nav-link-button;
-  padding-top: 3%;
+  padding-top: 1%;
 }
 
 .footer-link-to-top{
