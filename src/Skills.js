@@ -13,7 +13,7 @@ const Skills = () => {
 
 
       return ( 
-           <div id="skills" data-aos="flip-left">
+           <div id="skills">
                HTML, CSS, JS, REACTJS, SASS, REDUX, BOOTSTRAP, GIT/GITHUB, VSC, CLI
           </div>
           );

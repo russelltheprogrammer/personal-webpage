@@ -172,7 +172,7 @@ body{
   padding-top: 2rem;
   width: 100%;
   text-align: center;
-  @include background-color-scheme(dark);
+  @include background-color-scheme(default);
   color: white;
   padding-bottom: 10rem;
 }
@@ -321,7 +321,7 @@ body{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  @include background-color-scheme(light);
+  @include background-color-scheme(default);
   height: 65rem;
 }
 #contact h3{
