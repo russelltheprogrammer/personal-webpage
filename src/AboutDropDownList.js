@@ -3,7 +3,7 @@ const AboutDropDownList = ({props}) => {
     if(props.description === "Who is Russell?" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
-                    <p>I live in New York City and I have been doing web development since July 2020 when I created my first Javascript variable.
+                    <p>I live in New York City and I have been doing web development since July 2020 when I first created a Javascript variable.
                     This was a big moment for someone trying to find their calling in life. Ever since then, I have been hooked on programming.
                     I am now looking to join a team that shares my similar excitement for web development. As a profession that allows for forever learning
                     and daily problem solving, I can't help but flock to it.
@@ -15,7 +15,7 @@ const AboutDropDownList = ({props}) => {
         return (
             <div className="about-drop-down-word-blurb">
                 <p>Currently, I work part time in accounting and spend the rest of my time focusing on my goal of becoming a full time 
-                    web developer. Some of the ways I develop my programming skills are by building personal projects, learning new coding languagues 
+                    web developer. Some of the ways I develop my programming skills are by building personal projects, learning new concepts, best practices 
                     and technologies, and practicing my algorithm skills.
                 </p>
             </div>
