@@ -14,7 +14,7 @@ const AboutDropDownList = ({props}) => {
     else if(props.description === "What does Russell do right now?" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
-                <p>Currently, I work part time in accounting and spend the rest of my time focusing on my goal of becoming a full time 
+                <p>Currently, I work part time in accounting and spend the rest of my time focused on my goal of becoming a full time 
                     web developer. Some of the ways I develop my programming skills are by building personal projects, learning new concepts, best practices 
                     and technologies, and practicing my algorithm skills.
                 </p>
@@ -24,8 +24,7 @@ const AboutDropDownList = ({props}) => {
     else if(props.description === "What Russell used to do?" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
-                <p> I was a multi-millionaire but lost everything in a poor investment in an exotic lizard zoo...
-                    In reality, I used to be a full time accountant but I always knew I would not work as an accountant forever. I did not discover my
+                <p> I used to be a full time accountant but I always knew I would not work as an accountant forever. I did not discover my
                     passion for web development until later in life and I am sure glad I did because I am very happy on this new journey.
                     As an accountant, I have over 8 years of experience working in tax and I am a Certified Public Accountant 
                     in the State of New York. I still manage a side business to this day. Check out my website at&nbsp;
