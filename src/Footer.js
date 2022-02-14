@@ -1,4 +1,7 @@
 import copyToClipBoard from "./copyToClipboard";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
@@ -9,15 +12,16 @@ const Footer = () => {
             <ul id="footer-personal-links" className="d-flex justify-content-center">
             <li>
                 <a className="footer-link" href="https://www.linkedin.com/in/russell-monteith-cpa-0a43975a/" target="_blank" rel="noreferrer noopener">
-                <i className="fab fa-linkedin-in"></i></a>
+                <FontAwesomeIcon icon={faLinkedin} size="lg" /></a>
             </li>
             <li>
-                <a className="footer-link" href="https://github.com/russelltheprogrammer" target="_blank" rel="noreferrer noopener"><i className="fab fa-github-square"></i></a>
+                <a className="footer-link" href="https://github.com/russelltheprogrammer" target="_blank" rel="noreferrer noopener">
+                <FontAwesomeIcon icon={faGithubSquare} size="lg" /></a>
             </li>
             <li>
                 <span className="footer-link">
                 <button className="footer-link-button" onClick={() => copyToClipBoard("russelltheprogrammer@gmail.com", "Russell's E-mail Has Been Copied To The Clipboard.")}>
-                <i className="fas fa-envelope"></i></button>
+                <FontAwesomeIcon icon={faEnvelope} size="lg" /></button>
                 </span>
             </li>
             <li>
