@@ -172,7 +172,7 @@ body{
   padding-top: 2rem;
   width: 100%;
   text-align: center;
-  @include background-color-scheme(default);
+  @include background-color-scheme(dark);
   color: white;
   padding-bottom: 10rem;
 }
@@ -261,19 +261,30 @@ body{
 }
 
 #skills {
-  padding-top: 15rem;
+  padding-top: 2rem;
   padding-bottom: 15rem;
   width: 100%;
   text-align: center;
   @include background-color-scheme(default);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
 }
 
+#skills-container {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#skills h1{
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 7.5rem;
+}
+
 #projects{
   width: 100%;
-  @include background-color-scheme(default);
+  @include background-color-scheme(dark);
   height: 55rem;
   
 }
