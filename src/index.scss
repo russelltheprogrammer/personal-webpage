@@ -262,7 +262,7 @@ body{
 
 #skills {
   padding-top: 2rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
   width: 100%;
   text-align: center;
   @include background-color-scheme(default);
@@ -279,14 +279,17 @@ body{
 #skills h1{
   font-size: 3rem;
   padding-top: 1rem;
-  padding-bottom: 7.5rem;
+  padding-bottom: 2.5%;
+}
+
+.skills-item{
+  padding: 1%;
 }
 
 #projects{
   width: 100%;
   @include background-color-scheme(dark);
   height: 55rem;
-  
 }
 
 .projects-header{
