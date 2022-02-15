@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRegistered } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3, faJs, faReact, faBootstrap, faSass, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { colors } from './constants.js';
 
 
 
@@ -10,8 +11,6 @@ const Skills = () => {
 const [ fontColor, setFontColor ] = useState("white");
 const [ fontColorNumber, setFontColorNumber ] = useState(0);
 
-const colors = ["white", "red", "orange", "yellow", "green", "darkBlue", "#16063A", "violet"];
-  
 useEffect(() => {
      let number = fontColorNumber;
      let timer = setTimeout(() => {
@@ -31,7 +30,7 @@ useEffect(() => {
       return ( 
            <div id="skills">
                 <div id="skills-container">
-                    <h1>~Russell's Skills~</h1>
+                    <h1>~Skills~</h1>
                     <div style={{color: fontColor }}>
                          <div className="skills-item">
                          <FontAwesomeIcon icon={faHtml5} />&nbsp;HTML5&nbsp;&nbsp;&nbsp;
