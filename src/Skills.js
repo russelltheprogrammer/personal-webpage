@@ -8,18 +8,24 @@ import { faHtml5, faCss3, faJs, faReact, faBootstrap, faSass, faGithub } from '@
 const Skills = () => {
 
 const [ fontColor, setFontColor ] = useState("white");
+const [ fontColorNumber, setFontColorNumber ] = useState(0);
 
-const colors = ["white", "red", "yellow", "blue", "purple"];
+const colors = ["white", "red", "orange", "yellow", "green", "darkBlue", "#16063A", "violet"];
   
 useEffect(() => {
-     let colorToChange;
-
-
-
-     setFontColor(colorToChange)
-
+     let number = fontColorNumber;
+     let timer = setTimeout(() => {
+          if(number === 7){
+               setFontColorNumber(0);
+               setFontColor(colors[0]);
+          }
+          else{
+               setFontColorNumber(number + 1);
+               setFontColor(colors[number + 1]);
+          }
+     }, 2000);
+     return () => clearTimeout(timer);
 });
-
 
 
       return ( 
@@ -45,7 +51,6 @@ useEffect(() => {
                </div>
           </div>
           );
-    
 }
  
 export default Skills;
