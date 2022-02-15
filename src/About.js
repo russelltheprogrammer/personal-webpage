@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import AboutDropDownList from "./AboutDropDownList";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
 
@@ -61,7 +63,7 @@ else{
                         <span key={index}>
                             <div className="about-exit-button-container">
                                 {el.isActive ? 
-                                <button onClick={() => handleButtonClick(el.id)} className="about-exit-button"><i className="fas fa-times-circle"></i></button> : 
+                                <button onClick={() => handleButtonClick(el.id)} className="about-exit-button"> <FontAwesomeIcon icon={faTimesCircle} /></button> : 
                                 <div></div>}
                             </div>
                             <div className="about-content-container">
