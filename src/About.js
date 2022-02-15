@@ -36,7 +36,7 @@ if(!popOutStatus){
     return ( 
         <div id="about">
             <div id="about-container">
-            <h1>~About Russell~</h1>
+            <h1>~About~</h1>
             <div className="about-drop-down">
                 {buttonStatus.map((el, index) => {
                     return (

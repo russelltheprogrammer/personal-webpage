@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import NavbarPersonalLinks from "./NavbarPersonalLinks";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const NavbarMainLinks = (props) => {
 
@@ -22,7 +24,7 @@ const NavbarMainLinks = (props) => {
             aria-label="Toggle navigation"
             onClick={props.handleNavCollapse}
             >
-            <span className="navbar-toggler-icon"><i className="fas fa-bars" style={{fontSize: "20px"}}></i></span>
+            <span className="navbar-toggler-icon"> <FontAwesomeIcon icon={faBars} size="2x"/></span>
             </button>
 
             <div className={`${!props.isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarTogglerMenu">

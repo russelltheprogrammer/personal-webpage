@@ -1,7 +1,7 @@
 const Contact = () => {
     return ( 
         <div id="contact">
-                <h3>Contact Information</h3>
+                <h1>~Contact Information~</h1>
                     <div id="contact-grid">
                         <a  href="https://forum.freecodecamp.org/u/rundownx3/summary"
                         target="_blank"
