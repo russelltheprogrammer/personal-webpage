@@ -40,7 +40,7 @@ html {
 }
 
 body{
-  padding-top: 50px;
+  padding-top: 3.2rem;
   margin: 0;
   padding: 0;
   background-color: black;
@@ -53,7 +53,7 @@ body{
   font-size: 2.25rem;
   top: 0;
   left: 0;
-  border-bottom: 5px solid black;
+  border-bottom: .5rem solid black;
 }
 
 @media (max-width: 28.75em) {
@@ -112,8 +112,6 @@ body{
   height: 110vh;
   @include background-color-scheme(default);
   color: white;
-  
-  
 }
 
 #welcome-section h1{
@@ -298,7 +296,7 @@ body{
 #projects{
   width: 100%;
   @include background-color-scheme(dark);
-  height: 85rem;
+  height: 78rem;
   padding-top: 1%;
   color: white;
 }
@@ -328,49 +326,39 @@ body{
   }
 }
 
+.project-item:hover{
+  transition: 0.5s;
+  transform: translate(0, 2rem);
+}
 
 #contact{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1%;
   width: 100%;
   @include background-color-scheme(default);
   color: white;
-  height: 65rem;
+  height: 40rem;
+  text-align: center;
+  padding-top: 1%;
 }
+
 #contact h1{
   font-size: 4rem;
   padding-top: 1rem;
-  padding-bottom: .5%;
+  padding-bottom: 2%;
   font-family: 'Poppins', sans-serif;
   font-style: italic;
 }
 
-#contact-grid{
-  display: grid;
-  grid-gap: 3rem;
-  margin-top: 2rem;
-}
-.contact-item{
-  grid-column-start: 1;
-  grid-column-end: 5;
-  text-decoration: none;
-  width: 20rem;
-  background-color: #FF69B4;
-  justify-content: center;
-  border: solid black;
-  border-width: 1rem;
-}
-#contact-grid p {
-  text-align: center;
+#contact-container{
+  width: 60%;
+  margin-left: 20%;
+  @include background-color-scheme(lightest);
+  padding: 3% 1% 5% 1%;
+  border-bottom: .5rem solid white;
   font-size: 2rem;
-  color: yellow;
-  font-weight: bold;
-  
 }
-.contact-item:hover {
- background-color: #B22222;
+
+#contact-container:hover{
+  @include background-color-scheme(darkest);
 }
 
 #footer {
@@ -382,7 +370,7 @@ body{
   font-size: 2.25rem;
   padding-top: 1%;
   padding-bottom: .01%;
-  border-top: 5px solid black;
+  border-top: .5rem solid black;
 }
 
 #footer-personal-links li a {
@@ -392,7 +380,6 @@ body{
   display: inline-block;
   font-weight: bold;
 }
-
 
 #footer-personal-links {
   list-style-type: none;
