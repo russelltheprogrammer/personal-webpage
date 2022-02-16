@@ -326,6 +326,28 @@ body{
   }
 }
 
+@media (max-width: 57.5em){
+  .project-item {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 42.5em){
+  .project-item {
+    font-size: 70%;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 35em){
+  .project-item {
+    font-size: 60%;
+    word-wrap: break-word;
+    padding: 20%;
+  }
+}
+
+
 .project-item:hover{
   transition: 0.5s;
   transform: translate(0, 2rem);
