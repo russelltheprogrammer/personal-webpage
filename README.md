@@ -17,6 +17,7 @@ I used ```create-react-app```.
 + Handle onClick and onChange Functions
 + Popout ```<div>```s
 + Bootstrap
++ Mobile Responsiveness
 + FontAwesome library
 + AOS library
 + SCSS Mixins
