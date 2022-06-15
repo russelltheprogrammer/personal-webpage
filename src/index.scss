@@ -43,7 +43,7 @@ body{
   padding-top: 3.2rem;
   margin: 0;
   padding: 0;
-  background-color: black;
+  @include background-color-scheme(default);
   z-index: 1;
 }
 
@@ -110,7 +110,6 @@ body{
   align-items: center;
   width: 100%;
   height: 110vh;
-  @include background-color-scheme(default);
   color: white;
 }
 
@@ -135,7 +134,7 @@ body{
 
 #welcome-section p{
   font-size: 3rem;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
@@ -175,9 +174,8 @@ body{
   padding-top: 2rem;
   width: 100%;
   text-align: center;
-  @include background-color-scheme(dark);
   color: white;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 
 #about h1{
@@ -325,7 +323,6 @@ body{
   padding-bottom: 10rem;
   width: 100%;
   text-align: center;
-  @include background-color-scheme(default);
   font-size: 4rem;
   font-weight: bold;
   color: white;
@@ -350,7 +347,6 @@ body{
 
 #projects{
   width: 100%;
-  @include background-color-scheme(dark);
   height: 78rem;
   padding-top: 1%;
   color: white;
@@ -411,7 +407,6 @@ body{
 
 #contact{
   width: 100%;
-  @include background-color-scheme(default);
   color: white;
   height: 40rem;
   text-align: center;
@@ -486,9 +481,5 @@ body{
 .footer-link-button{
   @extend .nav-link-button;
   padding-top: 1%;
-}
-
-.footer-link-to-top{
- color: white;
 }
   
