@@ -1,7 +1,7 @@
 const colors = ["white", "red", "orange", "yellow", "green", "darkBlue", "#16063A", "violet"];
 
 const flexItems = [ 
-    { id: 0, title: "Tax Projection Application (In Process)", url: "https://github.com/russelltheprogrammer/tax-projection-individual"},
+    { id: 0, title: "Tax Projection Application", url: "https://russelltheprogrammer.github.io/tax-projection-individual/" },
     { id: 1, title: "Monteithtaxcpa.com", url: "http://monteithtaxcpa.com" }, 
     { id: 2, title: "JavaScript Calculator", url: "https://russelltheprogrammer.github.io/javascript-calculator/" }, 
     { id: 3, title: "Spacestagram", url: "https://russelltheprogrammer.github.io/spacestagram/" }, 
