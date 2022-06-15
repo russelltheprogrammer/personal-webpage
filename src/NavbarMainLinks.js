@@ -8,7 +8,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 const NavbarMainLinks = (props) => {
 
     useEffect(() => {
-        Aos.init({duration: 1000});
+        Aos.init({duration: 500});
     }, []);
 
     return ( 
