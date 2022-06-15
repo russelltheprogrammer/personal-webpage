@@ -34,6 +34,9 @@ const Footer = () => {
                 </a>
             </li>
             </ul>
+            <div style={{textAlign: "center", fontWeight: "bold", paddingBottom: "1%", color: "blue"}}>
+            NOTE! THIS SITE IS CURRENTLY UNDER A REDESIGN, STAY TUNED FOR FURTHER CHANGES!
+            </div>
         </div>
     </div>
      );
