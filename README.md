@@ -21,6 +21,7 @@ I used ```create-react-app```.
 + FontAwesome library
 + AOS library
 + SCSS Mixins
++ Material UI
 
 ## Source Code?
 
