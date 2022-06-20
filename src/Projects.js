@@ -1,4 +1,4 @@
-import { flexItems } from "./constants.js"
+import { projectItems } from "./constants.js"
 import {
     Card,
     CardActionArea,
@@ -22,7 +22,7 @@ const Projects = () => {
                 <h1 className="projects-header">~Projects~</h1>
             </div> 
               <Grid container spacing={3} alignItems="center" justifyContent="center">  
-                    {flexItems.map((item) => (
+                    {projectItems.map((item) => (
                      <Grid item key={item.id} xs={12} sm={6} md={4} lg={4} xl={4}>
                             <Card
                             elevation={3}
@@ -32,20 +32,20 @@ const Projects = () => {
                                 borderRadius: "25% 10%",
                             }}>
                             <CardActionArea href={item.url} target="_blank" rel="noreferrer noopener" alt="project link">
-                            <CardMedia
-                                component="img"
-                                height="150"
-                                image={item.img}
-                                alt={item.alt}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h4" component="div">
-                                <div className="projects-wording">{item.title}</div>
-                                </Typography>
-                            </CardContent>
+                                <CardMedia
+                                    component="img"
+                                    height="150"
+                                    image={item.img}
+                                    alt={item.alt}
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    <div className="projects-wording">{item.title}</div>
+                                    </Typography>
+                                </CardContent>
                             </CardActionArea>
                             </Card>
-                            </Grid>
+                        </Grid>
                     ))}
              </Grid>       
         </div>
