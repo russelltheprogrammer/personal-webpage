@@ -1,40 +1,55 @@
-import React, { useState, useEffect } from "react";
 import { flexItems } from "./constants.js"
+import {
+    Card,
+    CardActionArea,
+    CardMedia,
+    CardContent,
+    Container,
+    Grid,
+    Typography,
+} from "@mui/material";
 
 const Projects = () => {
 
-const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770);
-
-useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia)
-});
-
-const updateMedia = () => {
-    setIsDesktop(window.innerWidth > 770)
-};
-
     return ( 
+        <Container
+        sx={{
+            width: "80%",
+            textAlign: "center",
+        }}>
         <div id="projects">
             <div className="projects-header-container">
                 <h1 className="projects-header">~Projects~</h1>
-            </div>
-                <div className="container-fluid" style={{ width: '80%' }}>
-                    <div className="d-flex flex-row justify-content-center align-items-center flex-wrap">
-                        
+            </div> 
+              <Grid container spacing={3} alignItems="center" justifyContent="center">  
                     {flexItems.map((item) => (
-                        <div key={item.id} className={isDesktop ? "col-4 text-center" : "col-6 text-center"}>
-                            <div className="project-item-background">
-                                <div className="project-item">
-                                <a  href={item.url} target="_blank" rel="noreferrer noopener" alt="project link">{item.title}</a>
-                                </div>
-                            </div>
-                            </div>  
+                     <Grid item key={item.id} xs={12} sm={6} md={4} lg={4} xl={4}>
+                            <Card
+                            elevation={3}
+                            sx={{
+                                backgroundColor: "#8A7BAF",
+                                border: ".2rem solid black",
+                                borderRadius: "25% 10%",
+                            }}>
+                            <CardActionArea href={item.url} target="_blank" rel="noreferrer noopener" alt="project link">
+                            <CardMedia
+                                component="img"
+                                height="150"
+                                image={item.img}
+                                alt={item.alt}
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h4" component="div">
+                                <div className="projects-wording">{item.title}</div>
+                                </Typography>
+                            </CardContent>
+                            </CardActionArea>
+                            </Card>
+                            </Grid>
                     ))}
-
-                    </div>
-                </div>
+             </Grid>       
         </div>
+        </Container>
      );
 }
  
