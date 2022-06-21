@@ -30,7 +30,7 @@ const projectItems = [
     { id: 6, title: "Bootstrap" },
     { id: 7, title: "SASS" },
     { id: 8, title: "Git/GitHub" },
-    { id: 9, title: "REDUX" },
+    { id: 9, title: "Redux" },
     { id: 10, title: "Heroku" }
  ]
 
