@@ -1,50 +1,19 @@
-// import React, { useState, useEffect } from "react";
-import SkillsList from './SkillsList.js';
 import { skillItems }from './constants.js';
-// import { colors } from './constants.js';
 import {
      Card,
      Container,
      Grid,
      Paper,
  } from "@mui/material";
-
+ import JavascriptIcon from '@mui/icons-material/Javascript';
 
 
 const Skills = () => {
 
-// const [ fontColor, setFontColor ] = useState("white");
-// const [ fontColorNumber, setFontColorNumber ] = useState(0);
-// const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770);
-
-// useEffect(() => {
-//      let number = fontColorNumber;
-//      let timer = setTimeout(() => {
-//           if(number === 7){
-//                setFontColorNumber(0);
-//                setFontColor(colors[0]);
-//           }
-//           else{
-//                setFontColorNumber(number + 1);
-//                setFontColor(colors[number + 1]);
-//           }
-//      }, 2000);
-//      return () => clearTimeout(timer);
-// });
-
-
-// useEffect(() => {
-//     window.addEventListener("resize", updateMedia);
-//     return () => window.removeEventListener("resize", updateMedia)
-// });
-
-// const updateMedia = () => {
-//     setIsDesktop(window.innerWidth > 890)
-// };
-
-
       return ( 
           <div>
+               <div>
+               </div>
                <Container
                sx={{
                     width: "100%",
@@ -58,16 +27,23 @@ const Skills = () => {
                     </div>
                          <Card
                          sx={{
-                              padding: "3rem 0",
-                              width: "80%",
-                              marginLeft: "10%",
+                              padding: "3rem",
                               fontSize: "3rem",
                               color: "black",
+                              backgroundColor: "#8A7BAF"
                          }}>
-                              <Grid container spacing={1} alignItems="center" justifyContent="center">
+                              <Grid container spacing={3} alignItems="center" justifyContent="center">
                                    {skillItems.map((item) => (
                                        <Grid item key={item.id} xs={12} sm={6} md={4} lg={4} xl={4}>
-                                        <Paper>{item.title}</Paper>
+                                             <Paper sx={{
+                                                  backgroundColor: "white",
+                                                  border: ".2rem solid black",
+                                             }}>
+                                             {item.title}
+                                             <JavascriptIcon sx={{
+                                                  fontSize: "250%",
+                                             }}/>
+                                             </Paper>
                                        </Grid>
                                    ))}
           
@@ -77,8 +53,7 @@ const Skills = () => {
                               </div> */}
 
                               </Grid>
-                         </Card>
-                         
+                         </Card>   
                </Container>
           </div>
           );
