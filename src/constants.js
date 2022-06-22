@@ -21,16 +21,16 @@ const projectItems = [
  ];
 
  const skillItems = [
-    { id: 0, title: "HTML5"},
-    { id: 1, title: "CSS3" },
-    { id: 2, title: "JavaScript(ES6)" },
-    { id: 3, title: "TypeScript" },
-    { id: 4, title: "ReactJS" },
-    { id: 5, title: "Material UI" },
+    { id: 0, title: "JavaScript"},
+    { id: 1, title: "TypeScript" },
+    { id: 2, title: "React.js" },
+    { id: 3, title: "Redux" },
+    { id: 4, title: "HTML5" },
+    { id: 5, title: "CSS3" },
     { id: 6, title: "Bootstrap" },
-    { id: 7, title: "SASS" },
-    { id: 8, title: "Git/GitHub" },
-    { id: 9, title: "Redux" },
+    { id: 7, title: "Material UI" },
+    { id: 8, title: "Sass" },
+    { id: 9, title: "Git/Github" },
     { id: 10, title: "Heroku" }
  ]
 
