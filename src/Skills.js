@@ -27,18 +27,20 @@ const Skills = () => {
                          sx={{
                               padding: "1.5rem",
                               fontSize: "3rem",
-                              backgroundColor: "#442F74",
-                              border: "none", 
-                              boxShadow: "none",
+                              backgroundColor: "lightGrey",
+                              border: ".3rem solid black",
+                              boxShadow: '.3rem .3rem black',
                          }}>
-                              <Grid container spacing={0} alignItems="center" justifyContent="center">
+                              <Grid container spacing={0} >
                                    {skillItems.map((item) => (
                                        <Grid item key={item.id} xs={12} sm={6} md={4} lg={4} xl={4}>
-                                             <Paper sx={{
-                                                  border: ".2rem solid black",
-                                                  backgroundColor: "#8A7BAF",
+                                             <Paper elevation={0} square
+                                             sx={{
                                                   color: "black",
-                                                  padding: "1rem",
+                                                  padding: "2rem",
+                                                  border: "none", 
+                                                  boxShadow: "none",
+                                                  backgroundColor: "lightGrey",
                                              }}>
                                              {item.title}
                                              <SkillsIcon props={item.title} />
