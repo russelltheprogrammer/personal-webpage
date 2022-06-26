@@ -5,15 +5,13 @@ import {
      Grid,
      Paper,
  } from "@mui/material";
- import JavascriptIcon from '@mui/icons-material/Javascript';
+ import SkillsIcon from './SkillsIcon.js';
 
 
 const Skills = () => {
 
       return ( 
-          <div>
-               <div>
-               </div>
+          <div id="skills">
                <Container
                sx={{
                     width: "100%",
@@ -23,35 +21,30 @@ const Skills = () => {
                     paddingBottom: "5rem",
                }}>
                     <div id="skills-header">
-                         <h1 style={{ fontSize: "4rem", fontStyle: "italic", paddingBottom:  "1rem" }}>~Skills~</h1>
+                         <h1 style={{ fontSize: "4rem", fontStyle: "italic", paddingBottom:  "1rem" }}>~SKILLS~</h1>
                     </div>
                          <Card
                          sx={{
-                              padding: "3rem",
+                              padding: "1.5rem",
                               fontSize: "3rem",
-                              color: "black",
-                              backgroundColor: "#8A7BAF"
+                              backgroundColor: "#442F74",
+                              border: "none", 
+                              boxShadow: "none",
                          }}>
-                              <Grid container spacing={3} alignItems="center" justifyContent="center">
+                              <Grid container spacing={0} alignItems="center" justifyContent="center">
                                    {skillItems.map((item) => (
                                        <Grid item key={item.id} xs={12} sm={6} md={4} lg={4} xl={4}>
                                              <Paper sx={{
-                                                  backgroundColor: "white",
                                                   border: ".2rem solid black",
+                                                  backgroundColor: "#8A7BAF",
+                                                  color: "black",
+                                                  padding: "1rem",
                                              }}>
                                              {item.title}
-                                             <JavascriptIcon sx={{
-                                                  fontSize: "250%",
-                                             }}/>
+                                             <SkillsIcon props={item.title} />
                                              </Paper>
                                        </Grid>
                                    ))}
-          
-                               {/* <div style={{color: "blue" }}>
-                                    <SkillsList props={true} />
-                                   {isDesktop ? <SkillsList props={true} /> : <SkillsList props={false} />}
-                              </div> */}
-
                               </Grid>
                          </Card>   
                </Container>
