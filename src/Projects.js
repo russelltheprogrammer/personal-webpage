@@ -19,7 +19,7 @@ const Projects = () => {
         }}>
         <div id="projects">
             <div className="projects-header-container">
-                <h1 className="projects-header">~Projects~</h1>
+                <h1 className="projects-header">~PROJECTS~</h1>
             </div> 
               <Grid container spacing={3} alignItems="center" justifyContent="center">  
                     {projectItems.map((item) => (
