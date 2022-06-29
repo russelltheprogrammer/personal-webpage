@@ -8,11 +8,11 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 const About = () => {
 
 const [buttonStatus, setButtonStatus] = useState([
-            { id: 0, description: "Who is Russell?", isActive: false },
-            { id: 1, description: "What does Russell do right now?", isActive: false },
-            { id: 2, description: "What Russell used to do?", isActive: false },
-            { id: 3, description: "Education", isActive: false },
-            { id: 4, description: "Outside Interests/Hobbies", isActive: false }
+            { id: 0, description: "WHO AM I", isActive: false },
+            { id: 1, description: "WHAT I DO RIGHT NOW", isActive: false },
+            { id: 2, description: "WHAT I USED TO DO", isActive: false },
+            { id: 3, description: "EDUCATION", isActive: false },
+            { id: 4, description: "OUTSIDE INTERESTS", isActive: false }
         ]
     );
 
