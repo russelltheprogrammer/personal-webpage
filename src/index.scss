@@ -186,21 +186,19 @@ body{
   font-size: 4rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  // font-family: 'Poppins', sans-serif;
   font-style: italic;
 }
 
 .about-button{
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 2rem;
-  width: 25%;
+  padding: 3rem;
+  width: 60%;
   @include background-color-scheme(lightest);
   color: white;
-  border: white;
-  border-style: inset;
-  border-width: .5rem;
-  font-size: 1.75rem;
+  border: .5rem outset black;
+  border-radius: 30px;
+  font-size: 3rem;
 }
 
 @media (max-width: 54em){
@@ -333,7 +331,6 @@ body{
   font-size: 4rem;
   padding-top: 1rem;
   padding-bottom: 2%;
-  // font-family: 'Poppins', sans-serif;
   font-style: italic;
 }
 
