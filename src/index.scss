@@ -2,7 +2,6 @@
 
 // Check out _mixins.scss for color scheme used throughout
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 
@@ -340,9 +339,10 @@ body{
 #contact{
   width: 100%;
   color: white;
-  height: 40rem;
+  height: 32rem;
   text-align: center;
   padding-top: 1%;
+  @include background-color-scheme(lightest);
 }
 
 #contact h1{
@@ -355,10 +355,13 @@ body{
 #contact-container{
   width: 60%;
   margin-left: 20%;
-  @include background-color-scheme(lightest);
-  padding: 3% 1% 5% 1%;
-  border-bottom: .5rem solid white;
-  font-size: 2rem;
+  padding: 1%;
+  color: white;
+  font-weight: 500;
+  // border: .5rem solid black;
+  font-size: 3rem;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",
+  sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 @media (min-width: 23.76em) and (max-width: 36.25em){
@@ -377,9 +380,9 @@ body{
   }
 }
 
-#contact-container:hover{
-  @include background-color-scheme(darkest);
-}
+// #contact-container:hover{
+//   @include background-color-scheme(darkest);
+// }
 
 #footer {
   bottom: 0;
@@ -390,7 +393,7 @@ body{
   font-size: 2.25rem;
   padding-top: 1%;
   padding-bottom: .01%;
-  border-top: .5rem solid black;
+  // border-top: .5rem solid black;
 }
 
 #footer-personal-links li a {
