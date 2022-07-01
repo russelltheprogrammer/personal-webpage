@@ -6,7 +6,6 @@ import {
     CardMedia,
 } from "@mui/material";
 
-
 const WelcomeSection = () => {
 
     return (
@@ -38,7 +37,16 @@ const WelcomeSection = () => {
                             alt="Headshot"
                             sx={{
                                 margin: "auto",
-                                maxWidth: '30%',
+                                maxWidth: "30%",
+                                '@media (min-width: 771px) and (max-width: 1024px)': {
+                                  maxWidth: "40%"
+                                },
+                                '@media (min-width: 625px) and (max-width: 770px)': {
+                                  maxWidth: "50%"
+                                },
+                                '@media (max-width: 624px)': {
+                                  maxWidth: "75%"
+                                },
                                 height: 'auto',
                                 width: 'auto',
                                 border: ".25rem solid black",
@@ -52,16 +60,5 @@ const WelcomeSection = () => {
         </div>
      );
 }
-
-// .welcome-headshot{
-//     margin-top: 3%;
-//     max-width: 25%;
-//     height: auto;
-//     width: auto;
-//     border-style: solid;
-//     border-width: .25rem;
-//     border-color: black;
-//     border-radius: 50%;
-//   }
  
 export default WelcomeSection;
