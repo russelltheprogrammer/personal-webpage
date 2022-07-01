@@ -183,7 +183,7 @@ body{
 
 #skills {
   padding-top: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   width: 100%;
   text-align: center;
   font-size: 4rem;
@@ -369,6 +369,7 @@ body{
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
+    overflow-wrap: break-word;
   }
 }
 
@@ -377,6 +378,7 @@ body{
     width: 98%;
     margin-left: 1%;
     margin-top: 15%;
+    overflow-wrap: break-word;
   }
 }
 
@@ -394,6 +396,12 @@ body{
   padding-top: 1%;
   padding-bottom: .01%;
   // border-top: .5rem solid black;
+}
+
+@media (max-width: 32.75em){
+  #footer {
+    padding-top: 15%;
+  }
 }
 
 #footer-personal-links li a {
