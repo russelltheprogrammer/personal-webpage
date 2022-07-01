@@ -118,6 +118,24 @@ body{
   color: white;
 }
 
+@media (min-width: 501px) and (max-width: 770px){
+  #welcome-section{
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 441px) and (max-width: 500px){
+  #welcome-section{
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 440px){
+  #welcome-section{
+    margin-top: 45%;
+  }
+}
+
 #projects{
   height: 90rem;
   padding-top: .5%;
@@ -192,13 +210,13 @@ body{
 .about-button{
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 3rem;
+  padding: 2.7rem;
   width: 60%;
   @include background-color-scheme(lightest);
   color: white;
   border: .5rem outset black;
   border-radius: 30px;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 @media (max-width: 54em){
