@@ -28,7 +28,7 @@ const WelcomeSection = () => {
                   }}
                     >
                 <h1 style={{ fontSize: "200%"}}>I am Russell Monteith</h1>
-                    <p>A Front End Developer on the journey to becoming a Full Stack Developer. Scroll down to find out more...</p>
+                    <p>A New York City based Web Developer - Scroll down to find out more...</p>
                 </CardContent>
                         <CardMedia
                             component="img"
