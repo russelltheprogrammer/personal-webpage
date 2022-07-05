@@ -6,9 +6,9 @@ const Contact = () => {
         <div id="contact">
             <h1>~CONTACT~</h1>
                 <div id="contact-container">
-                    <p>RUSSELL</p>
+                    <p className='contact-name'>RUSSELL</p>
                     <p><FontAwesomeIcon icon={faPhoneSquare} /> (347) 508 3407</p>
-                    <p><FontAwesomeIcon icon={faPaperPlane} /> russelltheprogrammer@gmail.com</p>
+                    <p className="contact-email"><FontAwesomeIcon icon={faPaperPlane} /> russelltheprogrammer@gmail.com</p>
                 </div>
         </div>
      );
