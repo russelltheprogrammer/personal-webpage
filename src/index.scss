@@ -159,6 +159,7 @@ body{
   padding-top: 1rem;
   padding-bottom: 3%;
   font-style: italic;
+  @include header-font;
 }
 
 .projects-wording{
@@ -189,6 +190,7 @@ body{
   font-size: 4rem;
   font-weight: bold;
   color: white;
+  @include header-font;
 }
 
 #about-container {
@@ -197,6 +199,7 @@ body{
   text-align: center;
   color: white;
   padding-bottom: 6rem;
+  font-family: 'Kanit', sans-serif;
 }
 
 #about h1{
@@ -204,6 +207,7 @@ body{
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-style: italic;
+  @include header-font;
 }
 
 .about-button{
@@ -338,11 +342,13 @@ body{
 
 #contact{
   width: 100%;
-  color: white;
-  height: 32rem;
+  color: black;
+  height: 40rem;
   text-align: center;
   padding-top: 1%;
-  @include background-color-scheme(lightest);
+  // @include background-color-scheme(lightest);
+  background-color: white;
+  font-family: 'Kanit', sans-serif;
 }
 
 #contact h1{
@@ -350,13 +356,22 @@ body{
   padding-top: 1rem;
   padding-bottom: 2%;
   font-style: italic;
+  @include header-font;
+}
+
+.contact-name{
+  font-size: 4.2rem;;
+}
+
+.contact-email{
+ overflow-wrap: break-word;
 }
 
 #contact-container{
   width: 60%;
   margin-left: 20%;
   padding: 1%;
-  color: white;
+  // color: white;
   font-weight: 500;
   // border: .5rem solid black;
   font-size: 3rem;
@@ -369,7 +384,6 @@ body{
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
-    overflow-wrap: break-word;
   }
 }
 
@@ -382,10 +396,6 @@ body{
   }
 }
 
-// #contact-container:hover{
-//   @include background-color-scheme(darkest);
-// }
-
 #footer {
   bottom: 0;
   left: 0;
@@ -395,7 +405,7 @@ body{
   font-size: 2.25rem;
   padding-top: 1%;
   padding-bottom: .01%;
-  // border-top: .5rem solid black;
+  border-top: .5rem solid black;
 }
 
 @media (max-width: 32.75em){
