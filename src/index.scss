@@ -45,7 +45,7 @@ body{
   padding: 0;
   @include background-color-scheme(default);
   z-index: 1;
-  font-family: 'Kanit', sans-serif;
+  @include body-font;
 }
 
 #container-navbar{
@@ -55,8 +55,7 @@ body{
   top: 0;
   left: 0;
   border-bottom: .5rem solid black;
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",
-  sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  @include header-font;
 }
 
 @media (max-width: 28.75em) {
@@ -115,6 +114,7 @@ body{
   width: 100%;
   height: 110vh;
   color: white;
+  @include body-font;
 }
 
 @media (min-width: 501px) and (max-width: 770px){
@@ -165,7 +165,7 @@ body{
 .projects-wording{
   text-decoration: none;
   color: white;
-  font-family: 'Kanit', sans-serif;
+  @include body-font;
   font-style: italic;
   font-weight: 500;
   font-size: 2rem;
@@ -199,7 +199,7 @@ body{
   text-align: center;
   color: white;
   padding-bottom: 6rem;
-  font-family: 'Kanit', sans-serif;
+  @include body-font;
 }
 
 #about h1{
@@ -346,9 +346,8 @@ body{
   height: 40rem;
   text-align: center;
   padding-top: 1%;
-  // @include background-color-scheme(lightest);
   background-color: white;
-  font-family: 'Kanit', sans-serif;
+  @include body-font;
 }
 
 #contact h1{
@@ -360,23 +359,45 @@ body{
 }
 
 .contact-name{
-  font-size: 4.2rem;;
+  font-size: 4.5rem;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
 }
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+.contact-phone-number{
+  overflow-wrap: break-word;
+  cursor: pointer;
+ }
+
+ .contact-phone-number:hover{
+  color: red;
+ }
 
 .contact-email{
  overflow-wrap: break-word;
+ cursor: pointer;
 }
+
+.contact-email:hover{
+  @extend .contact-phone-number;
+ }
 
 #contact-container{
   width: 60%;
   margin-left: 20%;
   padding: 1%;
-  // color: white;
   font-weight: 500;
-  // border: .5rem solid black;
   font-size: 3rem;
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",
-  sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 @media (min-width: 23.76em) and (max-width: 36.25em){
