@@ -24,8 +24,8 @@ const AboutDropDownList = ({props}) => {
     else if(props.description === "WHAT I USED TO DO" && props.isActive) {
         return (
             <div className="about-drop-down-word-blurb">
-                <p> I used to work full time as a tax accountant and stumbled upon web development randomly during the Pandemic after conversing with a fellow web developer.
-                    For fun, I started programming, then later realized I could teach myself to get a full time position.<br/><br/>
+                <p> I used to work full time as a tax accountant and stumbled upon web development randomly during the Pandemic after conversing with a friend.
+                    For fun, I started programming, then later realized I could teach myself the skills needed to enter the profession.<br/><br/>
                     As an accountant, I have over 9 years of experience working in tax and I am a Certified Public Accountant 
                     in the State of New York. I still manage a side business to this day. Check out my website at&nbsp;
                     <a href="http://www.monteithtaxcpa.com/"
