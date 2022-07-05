@@ -8,8 +8,6 @@ import quote from "./images/quote.jpg";
 
 // all images are open source except CPA Logo which is owned by Russell Monteith CPA PLLC
 
-const colors = ["white", "red", "orange", "yellow", "green", "darkBlue", "#16063A", "violet"];
-
 const projectItems = [ 
     { id: 0, title: "Tax Projection Application", url: "https://russelltheprogrammer.github.io/tax-projection-individual/", img: taxes, alt: "Taxes" },
     { id: 1, title: "Monteithtaxcpa.com", url: "http://monteithtaxcpa.com", img: cpaLogo, alt: "CPA Website" }, 
@@ -34,4 +32,4 @@ const projectItems = [
     { id: 10, title: "Heroku" }
  ]
 
-export {colors, projectItems, skillItems};
+export {projectItems, skillItems};
