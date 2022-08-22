@@ -29,7 +29,8 @@ const projectItems = [
     { id: 7, title: "Material UI" },
     { id: 8, title: "Sass" },
     { id: 9, title: "Git/GitHub" },
-    { id: 10, title: "Heroku" }
+    { id: 10, title: "Heroku" },
+    { id: 11, title: "NPM" }
  ]
 
 export {projectItems, skillItems};
