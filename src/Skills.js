@@ -20,8 +20,9 @@ const Skills = () => {
                     paddingTop: "1rem",
                     paddingBottom: "5rem",
                }}>
+                    {/* Skills Header CSS */}
                     <div id="skills-header">
-                         <h1 style={{ fontSize: "4rem", fontStyle: "italic", paddingBottom:  "1rem" }}>~SKILLS~</h1>
+                         <h1 style={{ fontSize: "4rem", fontStyle: "italic", paddingBottom:  "1rem", color: "white" }}>~SKILLS~</h1>
                     </div>
                          <Card
                          sx={{
