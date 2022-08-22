@@ -28,7 +28,7 @@ const Projects = () => {
                             elevation={3}
                             sx={{
                                 backgroundColor: "#8A7BAF",
-                                border: ".2rem solid black",
+                                border: ".5rem solid black",
                                 borderRadius: "25% 10%",
                             }}>
                             <CardActionArea href={item.url} target="_blank" rel="noreferrer noopener" alt="project link">
