@@ -6,6 +6,7 @@ import {
     CardMedia,
 } from "@mui/material";
 
+
 const WelcomeSection = () => {
 
     return (
