@@ -12,7 +12,7 @@
       background-color: #2A1657;
     }
     @else {
-      background-color: #442F74
+      background-color: #fff;
     }
   }
 
@@ -23,6 +23,10 @@
 
   @mixin body-font {
     font-family: 'Kanit', sans-serif;
+  }
+
+  @mixin header-color {
+    color: white;
   }
   
 
