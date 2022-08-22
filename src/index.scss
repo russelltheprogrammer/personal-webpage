@@ -159,6 +159,7 @@ body{
   padding-top: 1rem;
   padding-bottom: 3%;
   font-style: italic;
+  @include header-color;
   @include header-font;
 }
 
@@ -208,6 +209,7 @@ body{
   padding-bottom: 1rem;
   font-style: italic;
   @include header-font;
+  @include header-color;
 }
 
 .about-button{
