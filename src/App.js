@@ -7,11 +7,12 @@ import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from './Footer';
+import appBackground from "./images/appBackground.jpg";
 
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${appBackground})` }}>
       <Navbar />
       <WelcomeSection />
       <Projects />
