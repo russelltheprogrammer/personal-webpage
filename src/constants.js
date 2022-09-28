@@ -31,6 +31,6 @@ const projectItems = [
     { id: 9, title: "Git/GitHub" },
     { id: 10, title: "Heroku" },
     { id: 11, title: "NPM" }
- ]
+ ];
 
 export {projectItems, skillItems};
