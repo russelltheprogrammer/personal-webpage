@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/personal-webpage/static/css/main.3ca4ff2b.chunk.css",
-    "main.js": "/personal-webpage/static/js/main.126a622e.chunk.js",
-    "main.js.map": "/personal-webpage/static/js/main.126a622e.chunk.js.map",
+    "main.js": "/personal-webpage/static/js/main.d78ceb2a.chunk.js",
+    "main.js.map": "/personal-webpage/static/js/main.d78ceb2a.chunk.js.map",
     "runtime-main.js": "/personal-webpage/static/js/runtime-main.6f2c658a.js",
     "runtime-main.js.map": "/personal-webpage/static/js/runtime-main.6f2c658a.js.map",
     "static/css/2.ec02d681.chunk.css": "/personal-webpage/static/css/2.ec02d681.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/main.3ca4ff2b.chunk.css.map": "/personal-webpage/static/css/main.3ca4ff2b.chunk.css.map",
     "static/js/2.af6c5d56.chunk.js.LICENSE.txt": "/personal-webpage/static/js/2.af6c5d56.chunk.js.LICENSE.txt",
     "static/media/appBackground.e04ed910.jpg": "/personal-webpage/static/media/appBackground.e04ed910.jpg",
-    "static/media/calculator.99f19521.jpg": "/personal-webpage/static/media/calculator.99f19521.jpg",
+    "static/media/calculatorC.99f19521.jpg": "/personal-webpage/static/media/calculatorC.99f19521.jpg",
     "static/media/cpaLogo.e3a413c0.jpg": "/personal-webpage/static/media/cpaLogo.e3a413c0.jpg",
     "static/media/drumMachine.d7c96bc3.jpg": "/personal-webpage/static/media/drumMachine.d7c96bc3.jpg",
     "static/media/headshot.7f13d429.jpg": "/personal-webpage/static/media/headshot.7f13d429.jpg",
@@ -27,6 +27,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.af6c5d56.chunk.js",
     "static/css/main.3ca4ff2b.chunk.css",
-    "static/js/main.126a622e.chunk.js"
+    "static/js/main.d78ceb2a.chunk.js"
   ]
 }
