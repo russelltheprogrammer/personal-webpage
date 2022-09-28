@@ -119,19 +119,19 @@ body{
 
 @media (min-width: 501px) and (max-width: 770px){
   #welcome-section{
-    margin-top: 25%;
+    height: 125vh;
   }
 }
 
 @media (min-width: 441px) and (max-width: 500px){
   #welcome-section{
-    margin-top: 30%;
+    height: 120vh;
   }
 }
 
 @media (max-width: 440px){
   #welcome-section{
-    margin-top: 45%;
+    height: 125vh;
   }
 }
 
