@@ -1,6 +1,6 @@
 import copyToClipBoard from "./copyToClipboard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithubSquare, faTwitter, faHackerrank } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -9,12 +9,20 @@ const NavbarPersonalLinks = () => {
     return ( 
     <ul id="nav-personal-links" className="navbar-nav ms-auto">
             <li className="nav-item">
+                <a className="nav-link" href="https://twitter.com/RussellTheProg1" target="_blank" rel="noreferrer noopener">
+                <FontAwesomeIcon icon={faTwitter} size="lg" /></a>
+            </li>
+            <li className="nav-item">
                 <a className="nav-link" href="https://www.linkedin.com/in/russell-monteith-cpa-0a43975a/" target="_blank" rel="noreferrer noopener">
                 <FontAwesomeIcon icon={faLinkedin} size="lg" /></a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="https://github.com/russelltheprogrammer" target="_blank" rel="noreferrer noopener">
                     <FontAwesomeIcon icon={faGithubSquare} size="lg" /></a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="https://www.hackerrank.com/russelltheprogr1?hr_r=1" target="_blank" rel="noreferrer noopener">
+                <FontAwesomeIcon icon={faHackerrank} size="lg" /></a>
             </li>
             <li className="nav-item">
             <span className="nav-link">
