@@ -21,7 +21,7 @@ const Projects = () => {
             <div className="projects-header-container">
                 <h1 className="projects-header">~PROJECTS~</h1>
             </div> 
-              <Grid container spacing={3} alignItems="center" justifyContent="center">  
+              <Grid container spacing={4} alignItems="center" justifyContent="center">  
                     {projectItems.map((item) => (
                      <Grid item key={item.id} xs={12} sm={6} md={4} lg={4} xl={4}>
                             <Card
@@ -34,7 +34,7 @@ const Projects = () => {
                             <CardActionArea href={item.url} target="_blank" rel="noreferrer noopener" alt="project link">
                                 <CardMedia
                                     component="img"
-                                    height="150"
+                                    height="180"
                                     image={item.img}
                                     alt={item.alt}
                                 />
