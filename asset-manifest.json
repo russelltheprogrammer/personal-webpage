@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/personal-webpage/static/css/main.16868c98.chunk.css",
-    "main.js": "/personal-webpage/static/js/main.7a972b1f.chunk.js",
-    "main.js.map": "/personal-webpage/static/js/main.7a972b1f.chunk.js.map",
+    "main.js": "/personal-webpage/static/js/main.b48b2c67.chunk.js",
+    "main.js.map": "/personal-webpage/static/js/main.b48b2c67.chunk.js.map",
     "runtime-main.js": "/personal-webpage/static/js/runtime-main.6f2c658a.js",
     "runtime-main.js.map": "/personal-webpage/static/js/runtime-main.6f2c658a.js.map",
     "static/css/2.ec02d681.chunk.css": "/personal-webpage/static/css/2.ec02d681.chunk.css",
@@ -17,7 +17,6 @@
     "static/media/cpaLogo.e3a413c0.jpg": "/personal-webpage/static/media/cpaLogo.e3a413c0.jpg",
     "static/media/drumMachine.d7c96bc3.jpg": "/personal-webpage/static/media/drumMachine.d7c96bc3.jpg",
     "static/media/headshot.7f13d429.jpg": "/personal-webpage/static/media/headshot.7f13d429.jpg",
-    "static/media/quote.2c847048.jpg": "/personal-webpage/static/media/quote.2c847048.jpg",
     "static/media/space.e7e76069.jpg": "/personal-webpage/static/media/space.e7e76069.jpg",
     "static/media/stopWatch.532cbd5b.jpg": "/personal-webpage/static/media/stopWatch.532cbd5b.jpg",
     "static/media/taxes.c2bbd340.jpg": "/personal-webpage/static/media/taxes.c2bbd340.jpg"
@@ -27,6 +26,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.bd04017a.chunk.js",
     "static/css/main.16868c98.chunk.css",
-    "static/js/main.7a972b1f.chunk.js"
+    "static/js/main.b48b2c67.chunk.js"
   ]
 }
