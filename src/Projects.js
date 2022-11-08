@@ -34,7 +34,7 @@ const Projects = () => {
                             <CardActionArea href={item.url} target="_blank" rel="noreferrer noopener" alt="project link">
                                 <CardMedia
                                     component="img"
-                                    height="180"
+                                    height="172"
                                     image={item.img}
                                     alt={item.alt}
                                 />
